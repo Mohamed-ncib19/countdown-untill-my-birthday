@@ -1,0 +1,79 @@
+@import url('https://fonts.cdnfonts.com/css/lcd');
+
+body{
+   display: flex;
+   justify-content: center;
+   background-color: #fae7cd;
+}
+
+.title{
+    width: 50%;
+    height: 6em;
+    margin: 20px auto;
+    position: relative;
+    background-image: linear-gradient(to left,transparent,transparent 50%,#f8d19e 50%,#f4dab0de);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 0.5s ease-in;
+    border-radius: 20px;
+
+}
+
+.title:hover{
+    background-position: 0 0;
+}
+
+.title h2{
+ 
+    font-size: x-large;
+    z-index: 1;
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    margin: -25px 0 0 -25px;
+    
+    
+
+}
+
+.container{
+    width: 700px;
+    height: 300px;
+
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border:1px solid #f0c65c;
+    border-radius: 70px;
+    box-shadow: 15px 12px #aaaaaa;
+    
+    animation: test 3s linear infinite;
+}
+
+
+@keyframes test {
+    0% {border:2px solid rgb(236, 91, 91)}
+    25%{border:5px solid rgb(109, 226, 109) }
+    50%{border:7px solid rgb(94, 94, 230) }
+    75%{border:5px solid rgb(222, 225, 61) }
+    100%{border:2px solid rgb(94, 94, 230)}
+    
+}
+
+
+.container p{
+    font-family: 'LCDMono2', sans-serif;
+    color: rgb(58, 31, 31);
+    position: absolute;
+    top: 23%;
+    left: 12%;
+    font-size: 300%;
+
+    
+
+}
